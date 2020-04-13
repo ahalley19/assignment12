@@ -1,0 +1,33 @@
+<html>
+<title>Enter Your PPU Email</title>
+<h1><center><b><i>What is your PPU Email</i></b></center></h1>
+<head>
+<script>
+  function checkAddress(fieldId){
+    var element = document.getElementById(fieldId);
+    var email = element.value;
+    if(email === ""){
+      alert("Email Address is required");
+    }
+      else if(email.indexOf("@pointpark.edu ") === -1){
+        alert("Must be a Point Park Email");
+      } else {
+        element.value = "Email is Validated";
+      }
+  }
+      </script>
+      </head>
+      <body>
+
+      <form onsubmit="checkAddress('email'); return false;">
+            <center>Email:</center><br>
+          <center>  <input type="text" id = "email"></center>
+          <br>
+            <center><input type="submit" value="Submit"></center>
+            <br>
+            </form>
+            <br>
+            <body background = "images/green1.png"
+        </body>
+
+        </html>

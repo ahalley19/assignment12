@@ -1,0 +1,36 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function validate(){
+      var sl = document.getElementById('selection').value;
+
+
+      if(sl=="select team"){
+alert("plz select team");
+return false;
+      }
+      return true;
+    }
+
+  </script>
+  </head>
+  <br>
+  <br>
+  <body background = "images/email.jpeg">
+  <br>
+  <body align="center">
+    <form name="forml" onsubmit="return validate()" action="http://www.google.com">
+      Whats your favorite hockey team?<select id="selection">
+        <option value="select team">
+          <br>
+          <br>
+          Select team</option>
+        <option>Pittsburgh Penguins</option>
+        <option>Vegas Golden Knights</option>
+        <option>Washington Crapitals</option>
+        <option>Montreal Canadians</option>
+        <input type="submit" value="Submit"
+</select>
+</form>
+</body>
+</html>

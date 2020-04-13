@@ -1,0 +1,32 @@
+<html>
+<title>Zipcode Verifier</title>
+<h1><center><b><i>What is your zipcode?</i></b></center></h1>
+<head>
+  <script>
+  function checkZip(fieldId){
+      var element = document.getElementById(fieldId);
+      var zip = element.value;
+    if(zip === ""){
+      alert("You need to enter your zipcode");
+      } else {
+        element.value = ("Your zipcode is " + zip)
+      }
+    }
+
+    </script>
+    </head>
+
+<body>
+  <body background = "images/email.jpeg">
+  <br>
+  <br>
+
+<form onsubmit="checkZip('zip'); return false;">
+  <center><b>Zipcode:</b><br></center>
+  <center><input type="text" id = "zip"></center>
+  <br>
+<center><input type="submit" value="Submit"></center>
+
+</form>
+</body>
+</html>
