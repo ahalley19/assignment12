@@ -1,0 +1,32 @@
+<html>
+<h1><center><b><i>Are you old enough?</i></b></center></h1>
+<head>
+
+<script>
+function checkAge(fieldId){
+    var element = document.getElementById(fieldId);
+    var age = element.value;
+  if(age < "18"){
+    alert("You're not old enough");
+    } else {
+      element.value = ("You're all good")
+    }
+  }
+
+  </script>
+  </head>
+
+<body>
+  <body background = "images/email.jpeg">
+  <br>
+  <br>
+
+<form onsubmit="checkAge('age'); return false;">
+  <center><b>Age:</b><br></center>
+  <center><input type="text" id = "age"></center>
+  <br>
+<center><input type="submit" value="Submit"></center>
+
+</form>
+</body>
+</html>
